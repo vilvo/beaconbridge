@@ -1,9 +1,12 @@
 [package]
-name = "hello_daemon"
+name = "beaconbridge"
 version = "0.1.0"
-authors = ["vilvo"]
+authors = ["Ville Ilvonen"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+daemonize = { path = "../daemonize" }
+btleplug = { path = "../btleplug" }
+config = "0.11"
+serde = "1.0.125"
+serde_derive = "1.0.125"
